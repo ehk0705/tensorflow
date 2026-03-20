@@ -470,6 +470,13 @@
         justify-content: flex-start;
       }
     }
+    .book-cover{
+      max-height: 260px;
+      width: auto;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+    }	
   </style>
 </head>
 <body>
@@ -480,16 +487,17 @@
         <div class="brand-badge">TF</div>
         <div>Introduction à TensorFlow</div>
       </div>
-      <nav class="nav-links">
-        <a href="#intro">Accueil</a>
-        <a href="#tensorflow">TensorFlow</a>
-        <a href="#deep-learning">Deep Learning</a>
-        <a href="#llm">LLM</a>
-        <a href="#concepts">Concepts</a>
-        <a href="#workflow">Méthode</a>
-        <a href="#exemples">Exemples</a>
-        <a href="#resume">Résumé</a>
-      </nav>
+<nav class="nav-links">
+  <a href="#intro">Accueil</a>
+  <a href="#tensorflow">TensorFlow</a>
+  <a href="#deep-learning">Deep Learning</a>
+  <a href="#llm">LLM</a>
+  <a href="#concepts">Concepts</a>
+  <a href="#workflow">Méthode</a>
+  <a href="#exemples">Exemples</a>
+  <a href="#resume">Résumé</a>
+  <a href="#livres">Livres</a>
+</nav>
     </div>
   </header>
 
@@ -1297,6 +1305,131 @@ model.compile(
         </div>
       </div>
     </section>
+	
+	
+    <section id="livres-images">
+      <div class="container">
+        <div class="section-title">
+          <h2>10. Livres conseillés</h2>
+          <p>
+            Voici quelques ouvrages utiles pour approfondir TensorFlow, Keras,
+            le deep learning et les modèles de langage.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <article class="card image-card">
+            <div class="image" style="background:#ffffff; display:flex; align-items:center; justify-content:center; padding:1rem;">
+              <img src="/tensorflow/assets/img/livres/hands-on-machine-learning-geron.jfif" alt="Couverture du livre Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow de Aurélien Géron" class="book-cover">
+            </div>
+            <div class="content">
+              <span class="mini-tag">O’Reilly</span>
+              <h3>Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow</h3>
+              <p><strong>Auteur :</strong> Aurélien Géron</p>
+              <p>
+                Un excellent livre pratique pour comprendre les bases et progresser
+                vers des modèles plus avancés.
+              </p>
+            </div>
+          </article>
+
+          <article class="card image-card">
+            <div class="image" style="background:#ffffff; display:flex; align-items:center; justify-content:center; padding:1rem;">
+              <img src="/tensorflow/assets/img/livres/deep-learning-with-python-chollet.jfif" alt="Couverture du livre Deep Learning with Python de François Chollet" class="book-cover">
+            </div>
+            <div class="content">
+              <span class="mini-tag">Manning</span>
+              <h3>Deep Learning with Python</h3>
+              <p><strong>Auteur :</strong> François Chollet</p>
+              <p>
+                Très bon ouvrage pour débuter avec Keras et comprendre les bases
+                du deep learning de manière claire.
+              </p>
+            </div>
+          </article>
+
+          <article class="card image-card">
+            <div class="image" style="background:#ffffff; display:flex; align-items:center; justify-content:center; padding:1rem;">
+              <img src="/tensorflow/assets/img/livres/deep-learning-goodfellow.jfif" alt="Couverture du livre Deep Learning de Ian Goodfellow, Yoshua Bengio et Aaron Courville" class="book-cover">
+            </div>
+            <div class="content">
+              <span class="mini-tag">MIT Press</span>
+              <h3>Deep Learning</h3>
+              <p><strong>Auteurs :</strong> Ian Goodfellow, Yoshua Bengio, Aaron Courville</p>
+              <p>
+                Ouvrage de référence, plus théorique, très utile pour aller plus loin
+                sur les fondements du deep learning.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="grid-3" style="margin-top:1rem;">
+          <article class="card image-card">
+            <div class="image" style="background:#ffffff; display:flex; align-items:center; justify-content:center; padding:1rem;">
+              <img src="/tensorflow/assets/img/livres/nlp-with-transformers.jfif" alt="Couverture du livre Natural Language Processing with Transformers" class="book-cover">
+            </div>
+            <div class="content">
+              <span class="mini-tag">O’Reilly</span>
+              <h3>Natural Language Processing with Transformers</h3>
+              <p><strong>Auteurs :</strong> Lewis Tunstall, Leandro von Werra, Thomas Wolf</p>
+              <p>
+                Très utile pour comprendre les Transformers, en lien direct avec
+                les grands modèles de langage.
+              </p>
+            </div>
+          </article>
+
+          <article class="card image-card">
+            <div class="image" style="background:#ffffff; display:flex; align-items:center; justify-content:center; padding:1rem;">
+              <img src="/tensorflow/assets/img/livres/applied-deep-learning-with-keras.jfif" alt="Couverture du livre Applied Deep Learning with Keras" class="book-cover">
+            </div>
+            <div class="content">
+              <span class="mini-tag">Packt</span>
+              <h3>Applied Deep Learning with Keras</h3>
+              <p><strong>Auteurs :</strong> Ritesh Bhagwat, Rishabh Anand, Prateek Joshi</p>
+              <p>
+                Livre orienté pratique avec des exemples concrets sur plusieurs types
+                de réseaux de neurones.
+              </p>
+            </div>
+          </article>
+
+          <article class="card image-card">
+            <div class="image" style="background:#ffffff; display:flex; align-items:center; justify-content:center; padding:1rem;">
+              <img src="/tensorflow/assets/img/livres/tensorflow-in-action.jfif" alt="Couverture du livre TensorFlow in Action" class="book-cover">
+            </div>
+            <div class="content">
+              <span class="mini-tag">Manning</span>
+              <h3>TensorFlow in Action</h3>
+              <p><strong>Auteurs :</strong> Thushan Ganegedara, et autres</p>
+              <p>
+                Ouvrage pratique centré sur l’utilisation concrète de TensorFlow
+                dans des projets variés.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="grid-2" style="margin-top:1rem;">
+          <div class="highlight">
+            <h3>Conseil simple</h3>
+            <p>
+              Pour commencer, lis d’abord un livre pratique comme ceux de François Chollet
+              ou Aurélien Géron, puis passe ensuite à des ouvrages plus théoriques.
+            </p>
+          </div>
+
+          <div class="highlight">
+            <h3>Organisation des images</h3>
+            <p>
+              Place les fichiers des couvertures dans le dossier :
+              <br><strong>/tensorflow/assets/img/livres/</strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>	
   </main>
 
   <footer class="footer">
